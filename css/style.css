@@ -76,7 +76,9 @@ footer {
   height: 100%;
 }
 /* О курсе*/
-.about {
+.about,
+.shedule {
+  /*закрашивает серый фон */
   background-color: #eee;
 }
 .about i {
@@ -84,32 +86,51 @@ footer {
   color: var(--color2);
 }
 .itd_circle {
-margin: 0 auto 15px;
-width: 70px;
-height: 70px;
-border: 3px solid var(--color2);
-border-radius: 50%;
-display: flex;
-justify-content: center;/* выравнивание по веритикали*/
-align-items: center; /*выравнивание по горизонтали*/
+  margin: 0 auto 15px;
+  width: 70px;
+  height: 70px;
+  border: 3px solid var(--color2);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center; /* выравнивание по веритикали*/
+  align-items: center; /*выравнивание по горизонтали*/
 }
 .line {
-width: 100px;
-height: 3px;
-background-color: var(--color1);
-margin: 15px auto 30px;
+  width: 100px;
+  height: 3px;
+  background-color: var(--color1);
+  margin: 15px auto 30px;
 }
+/*Для кого курс*/
+.forwhom h5 {
+  padding: 50px;
+  border: 3px solid var(--color1); /*рамочки вокруг текста*/
+}
+/* Для кого этот курс*/
+/* Аккордеон*/
+.accordion-button:not(.collapsed) {
+  color: var(--bs-white);
+  background-color: var(--color2);
+}
+/* Стрелочка в аккордеоне*/
+.accordion-button:not(.collapsed)::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  /* fill вставил white*/
+}
+
+
+
 /* Цвет  */
 .color1 {
-color: var(--color1);
+  color: var(--color1);
 }
 .color2 {
-color: var(--color2);
+  color: var(--color2);
 }
 
 .bg1 {
-background-color: var(--color1);
+  background-color: var(--color1);
 }
 .bg2 {
-background-color: var(--color2);
+  background-color: var(--color2);
 }
